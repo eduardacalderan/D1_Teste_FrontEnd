@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 import { BiPieChartAlt2, BiLinkExternal } from "react-icons/bi";
 import { IoRocketOutline, IoDiamondOutline } from "react-icons/io5";

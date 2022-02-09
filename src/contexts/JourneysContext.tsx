@@ -31,7 +31,7 @@ export const JourneysContext = createContext({} as MoviesContextData);
 
 export function JourneysProvider({ children }: MoviesProviderProps) {
   const [filters, setFilters] = useState<FilterResponseProps[]>([]);
-  const [selectedFilter, setSelectedFilter] = useState<FilterResponseProps>(
+  const [selectedFilter] = useState<FilterResponseProps>(
     {} as FilterResponseProps
   );
   const [selectedFilterId, setSelectedFilterId] = useState(0);
