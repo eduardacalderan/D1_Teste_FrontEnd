@@ -1,0 +1,34 @@
+.icons {
+  i {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.2rem;
+    margin-right: 1rem;
+
+    color: #d190dd;
+
+    margin-top: 0.75rem;
+
+    & + i {
+      color: #c1ca4f;
+      margin-top: 1.5rem;
+
+      & + i {
+        color: #35c667;
+
+        & + i {
+          color: #3fa8f4;
+
+          & + i {
+            color: #ebbd3e;
+
+            & + i {
+              color: #9fabd5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

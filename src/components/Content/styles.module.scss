@@ -1,0 +1,25 @@
+.container {
+  padding: 0rem 10.44rem;
+  background-color: var(--bg);
+  height: 100%;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+
+    .journeys {
+      margin-top: -1rem;
+    }
+  }
+
+  .filter {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 15fr;
+  }
+}

@@ -1,0 +1,44 @@
+.container {
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--bg);
+    border: none;
+
+    width: 150px;
+    line-height: 1.7rem;
+
+    font-size: 1rem;
+    color: hsl(233, 17%, 29%);
+    text-align: left;
+
+    cursor: pointer;
+
+    &:hover {
+      color: var(--light-blue-color);
+    }
+
+    &:focus {
+      color: var(--light-blue-color);
+      font-weight: bold;
+
+      strong {
+        background-color: var(--light-blue-color);
+        color: var(--white-color);
+      }
+    }
+
+    strong {
+      background: #e4e6f1;
+      color: #9196ab;
+
+      width: 24.45px;
+      padding: 0.5rem;
+      text-align: center;
+
+      clip-path: circle();
+    }
+  }
+}

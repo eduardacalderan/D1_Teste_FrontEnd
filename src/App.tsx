@@ -1,25 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Modal from "react-modal";
+import { NewJourneyModal } from "./components/NewJourneyModal";
+
+import { Dashboard } from "./components/Content";
+import { Header } from "./components/Header";
+import { SideBar } from "./components/SideBar";
+
+import "./styles/global.scss";
+import { JourneysProvider } from "./contexts/JourneysContext";
+
+Modal.setAppElement("#root"); //accessibility
 
 function App() {
+  const [isNewJourneyModalOpen, setIsNewJourneyModalOpen] = useState(false); //the modal is closed
+
+  function handleOpenNewJourneyModal() {
+    setIsNewJourneyModalOpen(true);
+  }
+
+  function handleCloseNewJourneyModal() {
+    setIsNewJourneyModalOpen(false);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <JourneysProvider>
+          <SideBar />
+          <div style={{ width: "100%" }}>
+            <Header onOpenNewJourneyModal={handleOpenNewJourneyModal} />
+            <NewJourneyModal
+              isOpen={isNewJourneyModalOpen}
+              onRequestClose={handleCloseNewJourneyModal}
+            />
+            <Dashboard />
+          </div>
+        </JourneysProvider>
+      </div>
+    </>
   );
 }
 

@@ -1,0 +1,111 @@
+header {
+  width: 100%;
+  padding: 5.1rem 10.44rem;
+
+  font-family: "Gotham", sans-serif;
+  font-weight: bold;
+
+  background-color: var(--bg);
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .leftContent {
+      display: flex;
+
+      .user {
+        background-color: var(--light-blue-color);
+        padding: 0.45rem;
+        clip-path: circle();
+
+        margin-right: 1.75rem;
+
+        span {
+          font-size: 0.875rem;
+          color: var(--white-color);
+
+          display: inline-flex;
+          align-items: center;
+        }
+      }
+
+      .acme {
+        background-color: var(--white-color);
+        border: 1px solid var(--details);
+        border-radius: 5px;
+        padding: 0px 12px;
+
+        img {
+          display: flex;
+          align-items: center;
+          width: 66px;
+          height: 35px;
+        }
+      }
+    }
+
+    .search {
+      position: relative;
+      display: flex;
+
+      i {
+        color: var(--light-blue-color);
+        font-size: 14px;
+
+        display: inline-block;
+        position: absolute;
+
+        margin-top: 10.5px;
+        margin-left: 12px;
+      }
+
+      input {
+        border: 1px solid #cccfde;
+        border-radius: 5px;
+
+        height: 35px;
+        width: 296px;
+        padding: 0 35px;
+
+        font-family: "Gotham", sans-serif;
+
+        &:hover {
+          box-shadow: 0px 0px 7px 0px hsla(0, 0%, 0%, 0.08);
+        }
+
+        &:focus {
+          outline: 0.5px solid hsla(0, 0%, 0%, 0.068);
+        }
+      }
+
+      button {
+        background-color: var(--light-blue-color);
+        color: var(--white-color);
+        font-family: "Gotham", sans-serif;
+        font-weight: bold;
+
+        border: none;
+        border-radius: 5px;
+
+        height: 35px;
+        width: 150px;
+        margin-left: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background: linear-gradient(270deg, #117eff, #00e1ff);
+        }
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

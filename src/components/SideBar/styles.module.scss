@@ -1,0 +1,85 @@
+.sideBar {
+  position: fixed;
+  left: 50%;
+  margin-left: -50%;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--bg-side-bar);
+    color: var(--white-color);
+    width: 4.44rem;
+    height: 100vh;
+
+    .border {
+      display: inline-block;
+
+      height: 3px;
+      width: 4.44rem;
+
+      background: linear-gradient(270deg, #117eff, #00e1ff);
+    }
+
+    div.top {
+      align-items: center;
+
+      i {
+        &:last-child {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      width: 2.2rem;
+      height: auto;
+    }
+
+    i {
+      font-size: 1.25rem;
+      margin-top: 2.5rem;
+
+      transition: color 0.3s;
+
+      &:hover {
+        color: var(--light-blue-color);
+      }
+
+      & + i {
+        margin-top: 1.56rem;
+      }
+
+      .tooltip {
+        transition: 0.2s;
+        opacity: 1;
+        border: 1px solid hsla(228, 13%, 62%, 0.233);
+        font-weight: bold;
+        font-style: normal;
+        color: #9196ab;
+      }
+    }
+
+    span.divider {
+      display: inline-block;
+
+      width: 21px;
+      height: 1px;
+
+      background: linear-gradient(270deg, #117eff, #00e1ff);
+
+      margin-top: 1.84rem;
+
+      & + i {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

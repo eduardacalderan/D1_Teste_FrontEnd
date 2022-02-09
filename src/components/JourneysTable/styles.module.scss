@@ -1,0 +1,27 @@
+table {
+  width: 100vh;
+  line-height: 55px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+
+  td {
+    background-color: #ffffff;
+    border-bottom: 10px solid var(--bg);
+    padding: 0 1rem;
+
+    & + td {
+      & + td {
+        padding: 0 2rem;
+      }
+    }
+
+    & + .status {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .name {
+    font-weight: bold;
+  }
+}

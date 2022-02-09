@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #fafbff;
+  --bg-side-bar: #1a1731;
+  --details: #ebeef6;
+  --white-color: #ffffff;
+  --light-blue-color: #117eff;
+}
+
+body {
+  font-family: "Gotham", sans-serif;
+  font-size: 1rem;
+
+  color: #3e4157;
+
+  height: 100%;
+}
+
+h2 {
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+button,
+input,
+i {
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+//650
