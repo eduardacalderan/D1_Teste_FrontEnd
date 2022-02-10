@@ -17,13 +17,16 @@ export function JourneysTable(props: JourneysItemProps) {
       case 1:
         return (
           <td className={styles.status} {...props.status}>
-            <RiSendPlane2Line
-              style={{
-                color: "#C1CA4F",
-                marginRight: "0.7rem",
-                fontSize: "1rem",
-              }}
-            />
+            <i>
+              {" "}
+              <RiSendPlane2Line
+                style={{
+                  color: "#C1CA4F",
+                  marginRight: "0.7rem",
+                  fontSize: "1rem",
+                }}
+              />
+            </i>
             Enviando
           </td>
         );
@@ -31,14 +34,16 @@ export function JourneysTable(props: JourneysItemProps) {
       case 2:
         return (
           <td className={styles.status} {...props.status}>
-            {" "}
-            <AiOutlinePlayCircle
-              style={{
-                color: "#35C667",
-                marginRight: "0.7rem",
-                fontSize: "1rem",
-              }}
-            />
+            <i>
+              {" "}
+              <AiOutlinePlayCircle
+                style={{
+                  color: "#35C667",
+                  marginRight: "0.7rem",
+                  fontSize: "1rem",
+                }}
+              />
+            </i>
             Ativadas
           </td>
         );
@@ -46,14 +51,16 @@ export function JourneysTable(props: JourneysItemProps) {
       case 3:
         return (
           <td className={styles.status} {...props.status}>
-            {" "}
-            <BsPencil
-              style={{
-                color: "#3FA8F4",
-                marginRight: "0.7rem",
-                fontSize: "1rem",
-              }}
-            />
+            <i>
+              {" "}
+              <BsPencil
+                style={{
+                  color: "#3FA8F4",
+                  marginRight: "0.7rem",
+                  fontSize: "1rem",
+                }}
+              />
+            </i>
             Configurando
           </td>
         );
@@ -61,28 +68,32 @@ export function JourneysTable(props: JourneysItemProps) {
       case 4:
         return (
           <td className={styles.status} {...props.status}>
-            {" "}
-            <IoBedOutline
-              style={{
-                color: "#EBBD3E",
-                marginRight: "0.7rem",
-                fontSize: "1rem",
-              }}
-            />
+            <i>
+              {" "}
+              <IoBedOutline
+                style={{
+                  color: "#EBBD3E",
+                  marginRight: "0.7rem",
+                  fontSize: "1rem",
+                }}
+              />
+            </i>
             Ociosa
           </td>
         );
       case 5:
         return (
           <td className={styles.status} {...props.status}>
-            {" "}
-            <AiOutlineCheck
-              style={{
-                color: "#9FABD5",
-                marginRight: "0.7rem",
-                fontSize: "1rem",
-              }}
-            />
+            <i>
+              {" "}
+              <AiOutlineCheck
+                style={{
+                  color: "#9FABD5",
+                  marginRight: "0.7rem",
+                  fontSize: "1rem",
+                }}
+              />
+            </i>
             Concluída
           </td>
         );

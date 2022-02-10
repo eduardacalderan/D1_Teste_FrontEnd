@@ -8,16 +8,18 @@ table {
     background-color: #ffffff;
     border-bottom: 10px solid var(--bg);
     padding: 0 1rem;
+    position: relative;
+
+    i {
+      position: absolute;
+      margin-top: 0.11rem;
+      margin-left: -2rem;
+    }
 
     & + td {
       & + td {
         padding: 0 2rem;
       }
-    }
-
-    & + .status {
-      display: flex;
-      align-items: center;
     }
   }
 
